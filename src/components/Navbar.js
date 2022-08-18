@@ -1,12 +1,12 @@
-import logo from '../logo_3.png';
+// import logo from '../logo_3.png';
 import fullLogo from '../full_logo.png';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
   Link,
-  useRouteMatch,
-  useParams
+  // useRouteMatch,
+  // useParams
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
@@ -67,7 +67,7 @@ async function connectWebsite() {
     window.ethereum.on('accountsChanged', function(accounts){
       window.location.replace(location.pathname)
     })
-  });
+  },[location.pathname]);
 
     return (
       <div className="">
